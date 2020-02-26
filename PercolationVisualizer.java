@@ -20,6 +20,7 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdDraw;
 
 import java.awt.Font;
+import java.io.File;
 
 public class PercolationVisualizer {
 
@@ -62,7 +63,7 @@ public class PercolationVisualizer {
     }
 
     public static void main(String[] args) {
-        In in = new In(args[0]);      // input file
+        In in = new In(new File("input8-dups.txt"));      // input file
         int n = in.readInt();         // n-by-n percolation system
 
         // turn on animation mode
